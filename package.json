@@ -1,6 +1,6 @@
 {
   "name": "ember-string-fns",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "This addon provides string helpers for Ember templates and components.",
   "keywords": [
     "ember-addon"
