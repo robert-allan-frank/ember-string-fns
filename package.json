@@ -5,9 +5,9 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/robert-allan-frank/ember-string-fns.git",
   "license": "MIT",
-  "author": "",
+  "author": "Robert Frank",
   "directories": {
     "doc": "doc",
     "test": "tests"
