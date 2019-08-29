@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function stringFromCharCode
- * @param {number[]} codes The array of codes.
+ * @param {...number} codes The array of codes.
  * @returns {string} The string sequence.
  */
 export function stringFromCharCode([...codes]) {
