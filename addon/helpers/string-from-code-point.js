@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function stringFromCodePoint
- * @param {number[]} points The array of points.
+ * @param {...number} points The array of points.
  * @returns {string} The string sequence.
  */
 export function stringFromCodePoint([...points]) {

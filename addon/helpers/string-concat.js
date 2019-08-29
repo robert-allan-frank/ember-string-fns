@@ -5,7 +5,7 @@ import { helper } from '@ember/component/helper';
  *
  * @public
  * @function stringConcat
- * @param {string[]} value The string values.
+ * @param {...string} value The string values.
  * @returns {string} The concatenated string.
  */
 export function stringConcat([...values]) {
