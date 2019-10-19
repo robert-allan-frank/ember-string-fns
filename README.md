@@ -128,7 +128,7 @@ Returns the last occurrence index where the substring begins. See [String.lastIn
 ```
 
 #### `string-not-equals`
-Determines if a string does not equals another string. 
+Determines if a string does not equal another string. 
 
 ```hbs
 {{string-not-equals 'ember' 'react'}}

@@ -15,10 +15,10 @@ export function stringEquals([...values]) {
   }
 
   // get first value
-  const first = values[0];
+  const first = values.shift();
 
   // compare first with each subsequent value for a match
-  return values.slice(1).every(value => value === first);
+  return values.every(value => value === first);
 }
 
 export default helper(stringEquals);

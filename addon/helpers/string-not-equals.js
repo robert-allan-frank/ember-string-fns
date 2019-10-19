@@ -15,10 +15,10 @@ export function stringNotEquals([...values]) {
   }
 
   // get first value
-  const first = values[0];
+  const first = values.shift();
 
   // compare first with each subsequent value for a non match
-  return values.slice(1).some(value => value !== first);
+  return values.some(value => value !== first);
 }
 
 export default helper(stringNotEquals);
