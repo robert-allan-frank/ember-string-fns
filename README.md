@@ -15,11 +15,13 @@ Usage
 * [`string-code-point-at`](#string-code-point-at)
 * [`string-concat`](#string-concat)
 * [`string-ends-with`](#string-ends-with)
+* [`string-equals`](#string-equals)
 * [`string-from-char-code`](#string-from-char-code)
 * [`string-from-code-point`](#string-from-code-point)
 * [`string-includes`](#string-includes)
 * [`string-index-of`](#string-index-of)
 * [`string-last-index-of`](#string-last-index-of)
+* [`string-not-equals`](#string-not-equals)
 * [`string-pad-end`](#string-pad-end)
 * [`string-pad-start`](#string-pad-start)
 * [`string-repeat`](#string-repeat)
@@ -75,6 +77,16 @@ Returns true if a string ends with another string. See [String.endsWith()](https
 {{string-ends-with haystack needle}}
 ```
 
+#### `string-equals`
+Determines if a string equals another string. 
+
+```hbs
+{{string-equals 'ember' 'react'}}
+{{string-equals 'ember' 'react' 'vue'}}
+{{string-equals value1 value2}}
+{{string-equals value1 value2 value3}}
+```
+
 #### `string-from-char-code`
 Get a character from utf-16 codes. See [String.fromCharCode()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode) for details on the String.fromCharCode function.
 
@@ -113,6 +125,14 @@ Returns the last occurrence index where the substring begins. See [String.lastIn
 ```hbs
 {{string-last-index-of 'i love love ember'}}
 {{string-last-index-of haystack needle}}
+```
+
+#### `string-not-equals`
+Determines if a string does not equal another string. 
+
+```hbs
+{{string-not-equals 'ember' 'react'}}
+{{string-not-equals value1 value2}}
 ```
 
 #### `string-pad-end`
