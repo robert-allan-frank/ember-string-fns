@@ -24,7 +24,7 @@ export function stringPadStart([value, padding = ' ', length = 0]) {
 
     // overflow check
     if (paddedValue.length > length) {
-      paddedValue = paddedValue.substring(0, length);
+      paddedValue = paddedValue.substring(paddedValue.length - length, paddedValue.length);
     }
   }
 

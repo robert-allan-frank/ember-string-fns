@@ -15,4 +15,9 @@ module('Integration | Helper | string-pad-end', function(hooks) {
     await render(hbs`{{string-pad-end 'ember' ' i love' 12}}`);
     assert.equal(this.element.textContent.trim(), 'ember i love');
   });
+
+  test('does ensure no overflow of value', async function(assert) {
+    await render(hbs`{{string-pad-end 'ember' '--------------------' 10}}`);
+    assert.equal(this.element.textContent.trim(), 'ember-----');
+  });
 });

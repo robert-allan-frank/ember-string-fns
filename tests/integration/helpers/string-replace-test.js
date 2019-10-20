@@ -25,4 +25,9 @@ module('Integration | Helper | string-replace', function(hooks) {
     await render(hbs`{{string-replace 'react' 'REACT' 'ember' true}}`);
     assert.equal(this.element.textContent.trim(), 'ember');
   });
+
+  test('returns value if no find exists', async function(assert) {
+    await render(hbs`{{string-replace 'react'}}`);
+    assert.equal(this.element.textContent.trim(), 'react');
+  });
 });
