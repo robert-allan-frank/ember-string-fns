@@ -1,5 +1,8 @@
 ember-string-fns
+[![npm version](https://badge.fury.io/js/ember-string-fns.svg)](https://badge.fury.io/js/ember-string-fns)
 [![Build Status](https://travis-ci.com/robert-allan-frank/ember-string-fns.svg?branch=develop)](https://travis-ci.com/robert-allan-frank/ember-string-fns)
+[![codecov](https://codecov.io/gh/robert-allan-frank/ember-string-fns/branch/develop/graph/badge.svg)](https://codecov.io/gh/robert-allan-frank/ember-string-fns)
+
 ==============================================================================
 This addon provides string helpers for Ember templates and components.
 
