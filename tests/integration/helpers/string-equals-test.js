@@ -25,4 +25,9 @@ module('Integration | Helper | string-equals', function(hooks) {
     await render(hbs`{{string-equals 'hello' 'hello' 'hello' 'hello' 'goodbye'}}`);
     assert.equal(this.element.textContent.trim(), 'false');
   });
+
+  test('can ensure at least two values are present', async function(assert) {
+    await render(hbs`{{string-equals 'ember'}}`);
+    assert.equal(this.element.textContent.trim(), 'false');
+  });
 });
