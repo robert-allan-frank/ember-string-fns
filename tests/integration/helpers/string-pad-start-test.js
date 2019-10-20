@@ -15,4 +15,9 @@ module('Integration | Helper | string-pad-start', function(hooks) {
     await render(hbs`{{string-pad-start 'ember' 'i love ' 12}}`);
     assert.equal(this.element.textContent.trim(), 'i love ember');
   });
+
+  test('does ensure no overflow of value', async function(assert) {
+    await render(hbs`{{string-pad-start 'ember' '--------------------' 10}}`);
+    assert.equal(this.element.textContent.trim(), '-----ember');
+  });
 });
