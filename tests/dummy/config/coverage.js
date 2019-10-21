@@ -1,3 +1,3 @@
 module.exports = {
-  excludes: ['*/mirage/**/*', '*/tests/dummy/app/**/*']
+  excludes: ['*/mirage/**/*', '**/*/router.js']
 };
