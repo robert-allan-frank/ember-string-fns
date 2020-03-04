@@ -9,7 +9,7 @@ import { helper } from '@ember/component/helper';
  * @param {number} index The index to get the code at.
  * @returns {string} The string character.
  */
-export function stringCodePointAt([value, index]) {
+export function stringCodePointAt([value = '', index]) {
   return value.codePointAt(index);
 }
 

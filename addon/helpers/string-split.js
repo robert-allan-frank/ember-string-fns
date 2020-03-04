@@ -9,7 +9,7 @@ import { helper } from '@ember/component/helper';
  * @param {string} delimiter The delimiter to split on.
  * @returns {string[]} The split string.
  */
-export function stringSplit([value, delimiter]) {
+export function stringSplit([value = '', delimiter = '']) {
   return value.split(delimiter);
 }
 

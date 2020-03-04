@@ -8,7 +8,7 @@ import { helper } from '@ember/component/helper';
  * @param {string} value The string to trim.
  * @returns {string} The trimmed string.
  */
-export function stringTrim([value]) {
+export function stringTrim([value = '']) {
   return value.trim();
 }
 
