@@ -34,7 +34,13 @@ Usage
 * [`string-split`](#string-split)
 * [`string-starts-with`](#string-starts-with)
 * [`string-substring`](#string-substring)
+* [`string-to-camel-case`](#string-to-camel-case)
+* [`string-to-kebab-case`](#string-to-kebab-case)
 * [`string-to-lower-case`](#string-to-lower-case)
+* [`string-to-pascal-case`](#string-to-pascal-case)
+* [`string-to-sentence-case`](#string-to-sentence-case)
+* [`string-to-snake-case`](#string-to-snake-case)
+* [`string-to-title-case`](#string-to-title-case)
 * [`string-to-upper-case`](#string-to-upper-case)
 * [`string-trim`](#string-trim)
 * [`string-trim-end`](#string-trim-end)
@@ -214,12 +220,65 @@ Extract a substring from a string. See [String.substring()](https://developer.mo
 {{string-substring string beginIndex endIndex}}
 ```
 
+#### `string-to-camel-case`
+Convert a string to camel case (camelCase). See [Camel Case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) for details.
+
+```hbs
+{{string-to-camel-case 'camel case'}}
+{{string-to-camel-case variableName}}
+```
+
+#### `string-to-kebab-case`
+Convert a string to kebab case (kebab-case). See [Kebab Case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) for details.
+
+```hbs
+{{string-to-kebab-case 'kebab case'}}
+{{string-to-kebab-case variableName}}
+```
+
 #### `string-to-lower-case`
 Convert a string to lower case. See [String.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase) for details on the String.toLowerCase function.
 
 ```hbs
 {{string-to-lower-case 'robert'}}
 {{string-to-lower-case firstName}}
+```
+
+
+#### `string-to-pascal-case`
+Convert a string to pascal case (PascalCase). See [Pascal Case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) for details.
+
+```hbs
+{{string-to-pascal-case 'pascal case'}}
+{{string-to-pascal-case variableName}}
+```
+
+
+#### `string-to-sentence-case`
+Convert a string to sentence case (Sentence case.). See [Sentence Case](https://en.wikipedia.org/wiki/Letter_case#Sentence_Case) for details. Note, sentences are considered a group of words that are completed with a !, ?, or .
+
+```hbs
+{{string-to-sentence-case 'i love ember!'}}
+{{string-to-sentence-case sentence}}
+```
+
+
+#### `string-to-snake-case`
+Convert a string to snake case (snake_case). See [Snake Case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) for details.
+
+```hbs
+{{string-to-snake-case 'snake case'}}
+{{string-to-snake-case variableName}}
+```
+
+
+#### `string-to-title-case`
+Convert a string to title case (Title Case). See [Title Case](https://en.wikipedia.org/wiki/Letter_case#Title_Case) for details. Note, due to the subjectivity of subsets, all words are operated against.
+
+
+```hbs
+{{string-to-title-case 'pulp fiction'}}
+{{string-to-title-case movieTitle}}
 ```
 
 #### `string-to-upper-case`

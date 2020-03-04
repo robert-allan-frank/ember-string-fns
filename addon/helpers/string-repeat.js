@@ -9,7 +9,7 @@ import { helper } from '@ember/component/helper';
  * @param {number} repeat The total number of times to repeat.
  * @returns {string} The repeated string.
  */
-export function stringRepeat([value, repeat]) {
+export function stringRepeat([value = '', repeat = 0]) {
   let result = '';
   for (let i = 0; i < repeat; i++) {
     result += value;

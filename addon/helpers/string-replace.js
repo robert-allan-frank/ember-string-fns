@@ -12,7 +12,7 @@ import { helper } from '@ember/component/helper';
  * @param {number} global Whether all matches should be replaced for just the first.
  * @returns {string} The replaced string.
  */
-export function stringReplace([value, find, replace = '', ignoreCase = false, global = false]) {
+export function stringReplace([value = '', find, replace = '', ignoreCase = false, global = false]) {
   // ensure there is something to find
   if (!find) {
     return value;

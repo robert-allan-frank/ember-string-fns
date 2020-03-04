@@ -8,7 +8,7 @@ import { helper } from '@ember/component/helper';
  * @param {string} value The string to lowercase.
  * @returns {string} The lowercased string.
  */
-export function stringToLowerCase([value]) {
+export function stringToLowerCase([value = '']) {
   return value.toLowerCase();
 }
 

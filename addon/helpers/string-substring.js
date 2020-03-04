@@ -10,7 +10,7 @@ import { helper } from '@ember/component/helper';
  * @param {number} endIndex The optional end index to substring.
  * @returns {string} The substring string.
  */
-export function stringSubstring([value, beginIndex, endIndex]) {
+export function stringSubstring([value = '', beginIndex = 0, endIndex]) {
   let result;
 
   if (endIndex === undefined) {

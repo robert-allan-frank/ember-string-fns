@@ -10,7 +10,7 @@ import { helper } from '@ember/component/helper';
  * @param {number} length The total number of characters before the function exits.
  * @returns {string} The padded string.
  */
-export function stringPadStart([value, padding = ' ', length = 0]) {
+export function stringPadStart([value = '', padding = ' ', length = 0]) {
   // ensure string values
   let paddedValue = value + '';
   const paddingValue = padding + '';
