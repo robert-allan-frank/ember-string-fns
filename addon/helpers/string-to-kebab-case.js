@@ -8,7 +8,7 @@ import { helper } from '@ember/component/helper';
  * @param {string} value The string to kebab-case.
  * @returns {string} The kebab-cased string.
  */
-export function stringToKebabCase([value]) {
+export function stringToKebabCase([value = '']) {
   return value
     .toLowerCase()
     .split(' ')

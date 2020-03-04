@@ -8,7 +8,7 @@ import { helper } from '@ember/component/helper';
  * @param {string} value The string to trim.
  * @returns {string} The trimmed string.
  */
-export function stringTrimEnd([value]) {
+export function stringTrimEnd([value = '']) {
   return value.replace(/\+|[\s\uFEFF\xA0]+$/g, '');
 }
 

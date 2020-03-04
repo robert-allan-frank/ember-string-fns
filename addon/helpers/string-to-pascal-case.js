@@ -8,7 +8,7 @@ import { helper } from '@ember/component/helper';
  * @param {string} value The string to PascalCase.
  * @returns {string} The PascalCased string.
  */
-export function stringToPascalCase([value]) {
+export function stringToPascalCase([value = '']) {
   return value
     .toLowerCase()
     .split(' ')

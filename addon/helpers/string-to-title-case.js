@@ -8,7 +8,7 @@ import { helper } from '@ember/component/helper';
  * @param {string} value The string to Title Case.
  * @returns {string} The Title Cased string.
  */
-export function stringToTitleCase([value]) {
+export function stringToTitleCase([value = '']) {
   return value
     .toLowerCase()
     .split(' ')

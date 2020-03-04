@@ -11,12 +11,15 @@ import { helper } from '@ember/component/helper';
  * @returns {boolean} True if match is found.
  */
 export function stringIncludes([haystack, needle, ignoreCase = false]) {
-  let result;
+  let result = false;
 
-  if (ignoreCase) {
-    result = haystack.toLowerCase().indexOf(needle.toLowerCase()) !== -1;
-  } else {
-    result = haystack.indexOf(needle) !== -1;
+  // haystack and needle are required
+  if (haystack && needle) {
+    if (ignoreCase) {
+      result = haystack.toLowerCase().indexOf(needle.toLowerCase()) !== -1;
+    } else {
+      result = haystack.indexOf(needle) !== -1;
+    }
   }
 
   return result;

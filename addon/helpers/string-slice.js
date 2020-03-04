@@ -10,7 +10,7 @@ import { helper } from '@ember/component/helper';
  * @param {number} endIndex The optional end index to slice.
  * @returns {string} The sliced string.
  */
-export function stringSlice([value, beginIndex, endIndex]) {
+export function stringSlice([value = '', beginIndex = 0, endIndex]) {
   let result;
 
   if (endIndex === undefined) {

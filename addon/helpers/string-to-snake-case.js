@@ -8,7 +8,7 @@ import { helper } from '@ember/component/helper';
  * @param {string} value The string to string_case.
  * @returns {string} The string_cased string.
  */
-export function stringToSnakeCase([value]) {
+export function stringToSnakeCase([value = '']) {
   return value
     .toLowerCase()
     .split(' ')
