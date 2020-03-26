@@ -21,6 +21,7 @@ Usage
 * [`string-equals`](#string-equals)
 * [`string-from-char-code`](#string-from-char-code)
 * [`string-from-code-point`](#string-from-code-point)
+* [`string-html-safe`](#string-html-safe)
 * [`string-includes`](#string-includes)
 * [`string-index-of`](#string-index-of)
 * [`string-last-index-of`](#string-last-index-of)
@@ -110,6 +111,14 @@ Get a character from code points. See [String.fromCodePoint()](https://developer
 ```hbs
 {{string-from-code-point 9733}}
 {{string-from-code-point codePoint}}
+```
+
+#### `string-html-safe`
+Output an HTML safe string. See [htmlSafe()](https://api.emberjs.com/ember/release/functions/@ember%2Ftemplate/htmlSafe) for details on the `htmlSafe` function.
+
+```hbs
+{{string-html-safe '<b>bold text</b>'}}
+{{string-html-safe htmlText}}
 ```
 
 #### `string-includes`
