@@ -1,6 +1,6 @@
 {
   "name": "ember-string-fns",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "This addon provides string helpers for Ember templates and components.",
   "keywords": [
     "ember-addon"
@@ -27,7 +27,7 @@
     "@ember/optional-features": "^0.7.0",
     "babel-eslint": "^10.0.2",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-cli": "~3.12.0",
+    "ember-cli": "~3.28.6",
     "ember-cli-addon-docs": "^0.6.14",
     "ember-cli-addon-docs-esdoc": "^0.2.2",
     "ember-cli-addon-docs-yuidoc": "^0.2.3",

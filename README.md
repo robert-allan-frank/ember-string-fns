@@ -181,16 +181,16 @@ Repeat a string a number of times. See [String.repeat()](https://developer.mozil
 Replace first occurence of a string with another string. 
 
 ```hbs
-{{string-replace 'i love react' 'ember'}}
-{{string-replace hackstack needle}}
+{{string-replace 'i love react' 'react' 'ember'}}
+{{string-replace hackstack needle thimble}}
 ```
 
 #### `string-replace-all`
 Replace all occurences of a string with another string.
 
 ```hbs
-{{string-replace-all 'i love react, react programming' 'ember'}}
-{{string-replace-all hackstack needle}}
+{{string-replace-all 'i love react, react programming' 'react' 'ember'}}
+{{string-replace-all hackstack needle thimble}}
 ```
 
 #### `string-slice`
